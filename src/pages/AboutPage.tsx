@@ -125,7 +125,7 @@ export default function AboutPage(): JSX.Element {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="inline-block bg-primary-50 text-primary-700 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-4">What Drives Us</span>
-            <h2 className="text-4xl font-display font-extrabold text-dark-900">Our Mission, Vision and People</h2>
+            <h2 className="text-4xl font-display font-extrabold text-dark-900">Our Mission, Commitment and People</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((v) => (
