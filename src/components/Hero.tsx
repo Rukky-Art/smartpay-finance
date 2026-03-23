@@ -1,4 +1,5 @@
 import { ArrowRight, Download, Shield, Zap, TrendingUp } from 'lucide-react'
+import bankingspace from '../images/bankingspace.jpg'
 
 interface Stat {
   value: string
@@ -37,7 +38,7 @@ export default function Hero(): JSX.Element {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="https://drive.google.com/file/d/1lXWjpnEX2uUzQFCKdD7xACxckFC7mV37/view" target="_blank" rel="noopener noreferrer"
+            <a href="/coming-soon" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 bg-primary-600 hover:bg-primary-500 text-white font-semibold px-7 py-4 rounded-full transition-all duration-200 hover:shadow-xl group">
               <Download size={18} />
               Download The App
@@ -59,17 +60,28 @@ export default function Hero(): JSX.Element {
         </div>
 
         <div className="hidden lg:flex items-center justify-center relative h-[480px]">
-          <div className="relative w-56 h-[440px] bg-dark-700 rounded-[2.5rem] border border-white/10 shadow-2xl flex items-center justify-center overflow-hidden animate-float">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary-800/30 to-dark-900/80" />
-            <div className="relative z-10 text-center px-6">
-              <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <img src="/images/logo.png" alt="SmartPay" className="w-10 h-10 object-contain" />
-              </div>
-              <p className="text-white font-display font-bold text-lg">SmartPay</p>
-              <p className="text-white/40 text-xs mt-1">Finance</p>
-            </div>
-            <div className="absolute top-5 left-1/2 -translate-x-1/2 w-20 h-1.5 bg-white/10 rounded-full" />
-          </div>
+          <div className="relative w-[240px] h-[480px] animate-float">
+  
+  {/* Phone outer shell */}
+  <div className="absolute inset-0 bg-dark-800 rounded-[3rem] border-[6px] border-dark-600 shadow-2xl shadow-black/60" />
+  
+  {/* Side buttons */}
+  <div className="absolute -left-[8px] top-20 w-[6px] h-10 bg-dark-600 rounded-l-md" />
+  <div className="absolute -left-[8px] top-36 w-[6px] h-8 bg-dark-600 rounded-l-md" />
+  <div className="absolute -right-[8px] top-28 w-[6px] h-12 bg-dark-600 rounded-r-md" />
+
+  {/* Screen */}
+  <div className="absolute inset-[6px] rounded-[2.5rem] overflow-hidden bg-black">
+    
+    
+    {/* Screen image */}
+    <img src={bankingspace} alt="SmartPay App" className="w-full h-full object-cover" />
+
+    {/* Bottom home bar */}
+    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-white/30 rounded-full z-10" />
+  </div>
+
+</div>
 
           <div className="absolute -left-4 top-16 bg-primary-950/80 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl">
             <div className="w-8 h-8 rounded-xl bg-white/10 flex items-center justify-center">

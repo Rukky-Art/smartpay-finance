@@ -12,7 +12,7 @@ export default function ComingSoonPage(): JSX.Element {
   }
 
   return (
-    <div className="min-h-screen bg-dark-900 relative overflow-hidden flex items-center justify-center">
+    <div className="min-h-screen bg-dark-900 relative overflow-hidden flex items-center justify-center pt-24">
       {/* Background */}
       <div
         className="absolute inset-0 opacity-60"
@@ -44,7 +44,7 @@ export default function ComingSoonPage(): JSX.Element {
         </div>
 
         {/* Title */}
-        <h1 className="text-5xl lg:text-6xl font-display font-extrabold text-white leading-tight mb-6">
+        <h1 className="text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
           We're Working{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-300">
             On It
@@ -107,8 +107,8 @@ export default function ComingSoonPage(): JSX.Element {
         {/* Contact fallback */}
         <p className="text-white/30 text-sm mt-10">
           Need help now?{' '}
-          <a href="tel:07071429326" className="text-primary-400 hover:text-primary-300 transition-colors font-semibold">
-            Call us at 07071429326
+          <a href="tel:09024656626" className="text-primary-400 hover:text-primary-300 transition-colors font-semibold">
+            Call us at 09024656626
           </a>
         </p>
       </div>

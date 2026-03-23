@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useLocation, Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import clsx from 'clsx'
 
@@ -43,8 +43,8 @@ export default function Navbar(): JSX.Element {
           ? 'text-primary-600 font-semibold border-b-2 border-primary-600 pb-0.5'
           : 'text-yellow-400 font-semibold'
         : scrolled
-        ? 'text-gray-600 hover:text-primary-600'
-        : 'text-white hover:text-yellow-400'
+          ? 'text-gray-600 hover:text-primary-600'
+          : 'text-white hover:text-yellow-400'
     )
 
   return (
@@ -54,8 +54,8 @@ export default function Navbar(): JSX.Element {
         scrolled
           ? 'bg-white/95 backdrop-blur-md shadow-sm py-3'
           : isHome
-          ? 'bg-transparent py-5'
-          : 'bg-primary-800 py-5'
+            ? 'bg-transparent py-5'
+            : 'bg-primary-800 py-5'
       )}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -89,17 +89,15 @@ export default function Navbar(): JSX.Element {
         </nav>
 
         {/* CTA */}
-        <a
-          href="https://drive.google.com/file/d/1lXWjpnEX2uUzQFCKdD7xACxckFC7mV37/view"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to="/coming-soon"
           className={clsx(
             'hidden lg:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5',
             scrolled ? 'bg-primary-600 hover:bg-primary-700' : 'bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30'
           )}
         >
           Get Started
-        </a>
+        </Link>
 
         {/* Mobile toggle */}
         <button
@@ -136,22 +134,20 @@ export default function Navbar(): JSX.Element {
                       ? 'bg-primary-50 text-primary-700 font-semibold'
                       : 'bg-white/10 text-yellow-400 font-semibold'
                     : scrolled
-                    ? 'text-dark-800 hover:text-primary-600 hover:bg-gray-50'
-                    : 'text-white hover:text-yellow-400 hover:bg-white/10'
+                      ? 'text-dark-800 hover:text-primary-600 hover:bg-gray-50'
+                      : 'text-white hover:text-yellow-400 hover:bg-white/10'
                 )
               }
             >
               {link.label}
             </NavLink>
           ))}
-          <a
-            href="https://drive.google.com/file/d/1lXWjpnEX2uUzQFCKdD7xACxckFC7mV37/view"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/coming-soon"
             className="mt-2 inline-flex justify-center bg-primary-600 text-white text-sm font-semibold px-5 py-3 rounded-full"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </header>

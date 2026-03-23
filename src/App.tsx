@@ -25,7 +25,7 @@ export default function App(): JSX.Element {
         <Route path="/business" element={<BusinessPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/get-started" element={<ComingSoonPage />} />
+        <Route path="/coming-soon" element={<ComingSoonPage />} />
       </Routes>
       <Footer />
       <ScrollToTop />
