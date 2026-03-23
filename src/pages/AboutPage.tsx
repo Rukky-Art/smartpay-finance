@@ -1,7 +1,7 @@
 import { Target, Eye, Users } from 'lucide-react'
 import PageHero from '../components/PageHero.tsx'
 import Team from '../components/Team.tsx'
-import distribution from '../src/assets/distribution.jpg'
+import distribution from '../images/distribution.jpg'
 
 const values = [
   { icon: <Target size={22} className="text-primary-600" />, title: 'Our Mission', desc: 'To become a leading integrated financial ecosystem that connects technology, banking, and investment to empower people and businesses.' },
